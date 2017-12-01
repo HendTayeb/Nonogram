@@ -1,21 +1,7 @@
-# Nonogram
+# NonogramSolver
 
-The Nonogram puzzle (also known as Hanjie, Picross, or Griddler) is categorized as a Constraint Satisfaction Problem (CSP).
-This type of problems are defined as a set of objects whose state must satisfy a number of constraints or limitations. CSPs
-are typically solved using a form of search, such as backtracking, constraint propagation, or local search. Another example
-of this kind of problems is Sudoku.
+Group Project for course CPCS-331 (Artificial Intelligence I)
 
-This repository contains a Nonogram solver that is based on backtracking. The algorithm that I developed incrementally
-builds candidate solutions, and abandons each partial candidate ("backtracks") as soon as the algorithm determines that
-the candidate cannot possibly be completed to a valid solution. The (tree) search space that is generated is traversed
-in depth-first order.
+Nonograms, are picture logic puzzles in which cells in a grid of size (n x m) must be colored or left blank according to numbers at the side of the grid to reveal a hidden picture, Each number indicates the number of coloured cells on that row/column.
 
-The algorithm, before resorting to backtracking, applies a set of direct rules that enable the partial (and, sometimes,
-total) resolution of the problem. Thus, the backtracking algorithm does not start the Nonogram from scratch; it starts
-from a partially (or totally) solved Nonogram. This results in a reduction in execution time. Additionally, the algorithm
-reduces the time of execution by means of pruning conditions, which discard nodes of the search tree that cannot possible
-lead to a valid solution. This is in contrast to brute-force algorithms, which are generally too ineffective (mostly in
-terms of execution time) since they systematically enumerate ALL possible candidates for the solution and check whether
-each candidate satisfies the problem's statement.
-
-The code that is contained in this repository can be directly imported into Eclipse and executed as a regular Java application. The "inputFiles" folder contains some examples of Nonograms, which can be used as test cases for the Nonogram solver.
+This repository is forked from Mario Cervera's repository Nonogram, and modified to solve nanograms using backtracking and AC-3 algorithms.This program works in netbeans. The file named NonogramSolver is the package that will be placed inside a source package for a netbeans projec, while the inputFiles file should be placed in the project file. you should run the file named "NonogramSolverUI.java".

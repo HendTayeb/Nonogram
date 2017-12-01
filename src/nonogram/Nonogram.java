@@ -1,4 +1,4 @@
-package nonogram;
+package NonogramSolver;
 
 import java.io.BufferedReader;
 import java.io.File;

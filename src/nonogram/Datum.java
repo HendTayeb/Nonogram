@@ -1,4 +1,4 @@
-package nonogram;
+package NonogramSolver;
 
 /**
  * This class represents a piece of data from the input file (i.e., a group of cells that must be painted).
